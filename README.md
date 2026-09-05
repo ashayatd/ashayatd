@@ -42,92 +42,29 @@ I want to understand **why they work, where they break, and how to make them
 better.**
 
 ---
-
 # 🚀 What I've Built
 
-### 🏨 Squach — Multi-Vertical Super App
+🏨 **Super Apps**  
+Accommodation • Bus Booking • Food • Mart • Dine-in  
+Built backend services, booking workflows, caching and **microservice
+architectures**.
 
-Accommodation • Bus Booking • Food • Mart • Dine-in
+🌐 **Social Platforms**  
+Scalable feeds • Real-time interactions • Data-heavy systems  
+Worked on **performance, pagination and backend architecture**.
 
-**Node.js · Express · MySQL · Redis · BullMQ · Microservices**
+💼 **Job Marketplaces**  
+One-on-one video calls • WebSockets • Real-time sessions  
+Built systems around **session management, connection recovery and reliability**.
 
-One of my deeper backend engineering projects.
+🏢 **ERP & Billing Systems**  
+Real-time operations • Multi-table management • Dynamic billing  
+Built systems used for **live table management and player-level billing**.
 
-- ⚡ **90s → ~300ms** hotel search & filtering
-- 🔐 Redis distributed locking to prevent double bookings
-- ⏱️ 20-minute reservation TTL with automatic release
-- 🏗️ Monolith → **6 microservices**
-- 🚪 API Gateway architecture
-- 💾 Refresh-ahead caching
-- 📉 ~95% reduction in third-party currency API calls
-- 🔄 7-step booking workflow across inventory, payment, confirmation,
-  notifications and analytics
-
----
-
-### 🎓 Tambez — Social Platform
-
-**Node.js · MongoDB · Redis · Next.js**
-
-Focused heavily on feed performance and data modelling.
-
-- ⚡ Replaced **~150 N+1 queries** with a single 8-stage aggregation pipeline
-- 📈 Designed feeds to remain performant as following lists grew
-- 🔄 Solved infinite-scroll duplication at the server level
-- 🧩 Designed a **23-collection MongoDB schema**
-- 💾 Redis-cached feeds for faster access
-
----
-
-### 💼 Eyeshare — Job Marketplace
-
-**Node.js · MongoDB · Agora · Socket.IO · React**
-
-A real-time marketplace with one-on-one video communication.
-
-- 📡 Reduced socket payloads by **60–80%**
-- 💰 Directly reduced Agora usage costs
-- ⏸️ Automatically paused streams when a peer left
-- 🔄 Added a 60-second reconnect window
-- ❤️ Built database heartbeat handling for unstable connections
-- 🛡️ Prevented unnecessary session teardown during network failures
-
----
-
-### 🎱 Hotpocket — Billiards Billing ERP
-
-**React · Python · WebSockets · Firebase · Firestore**
-
-A production system used by real users.
-
-- 🖥️ Built the complete React frontend
-- 🎱 Real-time management of **12 tables across 2 branches**
-- 💰 Built table, canteen and player-level billing
-- 👥 Supported dynamic bill splitting between **2–4 players**
-
----
-
-# 🤖 AI & Automation
-
-I'm increasingly moving deeper into **AI-powered software engineering**.
-
-### 🎙️ Alexa AI
-
-**Node.js · Express · Alexa Skills Kit · Groq / LLaMA · Self-Hosted Models**
-
-A personal AI voice assistant built on top of Alexa.
-
-- 🧠 Replaced scripted Alexa responses with LLM-generated answers
-- 🔗 Built the complete Alexa → Express → LLM request lifecycle
-- 💭 Added per-session conversation memory
-- ✂️ Implemented token-budget based context trimming
-- 🔀 Added topic-switch detection to prevent stale context
-- 🏠 Experimenting with self-hosted models
-
-I'm particularly interested in the engineering layer around AI:
-
-**LLMs → APIs → orchestration → memory → tools → agents → production systems**
-
+🤖 **AI Applications**  
+LLMs • Voice interfaces • Conversation memory • Self-hosted models  
+Built an **Alexa-based AI assistant** and explored the engineering behind
+LLM-powered applications.
 ---
 
 # 🛠️ Tech Stack
