@@ -1,119 +1,44 @@
-# Hey, I'm Ashay 👋
+# Hi, I'm Ashay 👋
 
-### Full-Stack Engineer building systems that scale. ⚡
+**Full-Stack AI Engineer** · 3+ years · 8 production products shipped
 
-I build production software across **backend systems, full-stack applications,
-real-time architectures, automation, and AI**.
+I own products end to end, from architecture, APIs and data models to deployment and post-launch fixes.
+Full-stack depth in **Node.js / Next.js**, now building **RAG and agentic AI systems** in **Python**.
 
-My work has taken me from building interfaces to owning systems end-to-end —
-from **architecture and data modelling to deployment, monitoring, and
-post-launch fixes**.
-
-I've shipped **8 production client products**, and I enjoy the kind of
-engineering problems where performance, reliability, and scale actually matter.
-
-> **Build → Measure → Optimize → Repeat. 🚀**
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://portfolio-web-steel-eta.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat)](https://linkedin.com/in/ashayatd)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:ashay.tamrakar@gmail.com)
 
 ---
 
-## 🧑‍💻 About Me
+### ⚡ Impact
 
-I'm a **Full-Stack Software Engineer** with a strong backend focus.
+| Result | How |
+|---|---|
+| **~90s → ~300ms** search API | 10+ table join → field projection + pagination |
+| **~150 → 1** queries | N+1 feed queries → one 8-stage MongoDB aggregation |
+| **1 → 6** services | Monolith → microservices on Kubernetes (Helm, HPA) |
+| **0** double bookings | Redis distributed lock + TTL reservations |
+| **−95%** third-party API calls | Refresh-ahead Redis cache |
+| **−60–80%** socket payloads | Delta signaling on live video calls |
 
-I started by building web applications and gradually moved deeper into
-**system architecture, performance engineering, distributed systems,
-real-time communication, and cloud deployment**.
+### 🤖 GenAI work
 
-Some problems I've had the chance to solve:
+- **OrbitDesk**: RAG + agentic helpdesk copilot. Hybrid BM25 + vector search, reranking, retrieval-time RBAC.
+  `Recall@5 1.0` · `RAGAS faithfulness 0.91` · `0 leaks in 1,386 adversarial queries`
+- **Pluto**: voice-controlled coding agent on Alexa. LLM tool-calling, Groq → Ollama failover, sandboxed execution.
+- **ERP SaaS (at work)**: multi-tenant Django backend with a self-hosted LLM gateway on Celery queues.
 
-- ⚡ Reduced a core search API from **~90 seconds → ~300ms**
-- 🧩 Replaced **~150 N+1 queries** with a single MongoDB aggregation pipeline
-- 🏗️ Decomposed a monolith into **6 microservices**
-- 🚫 Prevented double bookings using **Redis distributed locking**
-- 💾 Reduced third-party currency API calls by **~95%** using refresh-ahead caching
-- 📡 Reduced socket payloads by **60–80%** using delta signaling
-- 🎥 Built real-time video-call infrastructure with session recovery
-- 🔄 Designed queue-based workflows for asynchronous processing
-- 🛠️ Owned deployment, CI/CD, configuration and monitoring for production systems
+### 🛠️ Stack
 
-I don't just want things to work.
+| | |
+|---|---|
+| **AI** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat) ![RAG](https://img.shields.io/badge/RAG-6E40C9?style=flat) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white) |
+| **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat&logo=socket.io&logoColor=white) |
+| **Frontend** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) |
+| **Data** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white) |
+| **Cloud** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white) ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white) |
 
-I want to understand **why they work, where they break, and how to make them
-better.**
+**System design:** HLD / LLD · microservices · caching · distributed locking · queues · real-time systems
 
----
-# 🚀 What I've Built
-
-🏨 **Super Apps**  
-Accommodation • Bus Booking • Food • Mart • Dine-in  
-Built backend services, booking workflows, caching and **microservice
-architectures**.
-
-🌐 **Social Platforms**  
-Scalable feeds • Real-time interactions • Data-heavy systems  
-Worked on **performance, pagination and backend architecture**.
-
-💼 **Job Marketplaces**  
-One-on-one video calls • WebSockets • Real-time sessions  
-Built systems around **session management, connection recovery and reliability**.
-
-🏢 **ERP & Billing Systems**  
-Real-time operations • Multi-table management • Dynamic billing  
-Built systems used for **live table management and player-level billing**.
-
-🤖 **AI Applications**  
-LLMs • Voice interfaces • Conversation memory • Self-hosted models  
-Built an **Alexa-based AI assistant** and explored the engineering behind
-LLM-powered applications.
----
-
-# 🛠️ Tech Stack
-
-### Languages
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-
-### Backend
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![REST](https://img.shields.io/badge/REST_APIs-02569B?style=for-the-badge)
-![Microservices](https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge)
-
-### Frontend
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-### Databases & Caching
-
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-### Infrastructure
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-
-### Systems & Architecture
-
-```text
-HLD / LLD
-     │
-     ├── Microservices
-     ├── API Gateways
-     ├── Caching
-     ├── Distributed Locking
-     ├── Queue-Based Processing
-     ├── Real-Time Systems
-     ├── Data Modelling
-     └── Performance Engineering
+> **Build → Measure → Optimize → Repeat.**
