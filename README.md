@@ -1,44 +1,106 @@
-# Hi, I'm Ashay 👋
+<!-- ═══════════ HEADER ═══════════ -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F00FF,100:00D4FF&height=210&section=header&text=Ashay%20Tamrakar&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=Full-Stack%20AI%20Engineer&descSize=20&descAlignY=58&animation=fadeIn" width="100%"/>
+</p>
 
-**Full-Stack AI Engineer** · 3+ years · 8 production products shipped
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4FF&center=true&vCenter=true&width=620&lines=Full-Stack+%C2%B7+GenAI+%C2%B7+Agentic+AI;Node.js+%2B+Next.js+%2B+Python;Search+API%3A+90s+%E2%86%92+300ms+%E2%9A%A1;8+production+products+shipped+%F0%9F%9A%80;RAG+with+0+leaks+in+1%2C386+attacks+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG"/>
+</p>
 
-I own products end to end, from architecture, APIs and data models to deployment and post-launch fixes.
-Full-stack depth in **Node.js / Next.js**, now building **RAG and agentic AI systems** in **Python**.
+<p align="center">
+  <a href="https://portfolio-web-steel-eta.vercel.app"><img src="https://img.shields.io/badge/Portfolio-7F00FF?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/ashayatd"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white"/></a>
+  <a href="mailto:ashay.tamrakar@gmail.com"><img src="https://img.shields.io/badge/Email-00D4FF?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://portfolio-web-steel-eta.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat)](https://linkedin.com/in/ashayatd)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:ashay.tamrakar@gmail.com)
+<p align="center">
+  <b>3+ years owning products end to end — architecture, APIs, data, deployment.</b><br/>
+  Full-stack depth in Node.js & Next.js. Now building RAG and agentic AI systems in Python.
+</p>
 
----
+<br/>
 
-### ⚡ Impact
+<!-- ═══════════ IMPACT ═══════════ -->
+<h2 align="center">⚡ Impact</h2>
 
-| Result | How |
-|---|---|
-| **~90s → ~300ms** search API | 10+ table join → field projection + pagination |
-| **~150 → 1** queries | N+1 feed queries → one 8-stage MongoDB aggregation |
-| **1 → 6** services | Monolith → microservices on Kubernetes (Helm, HPA) |
-| **0** double bookings | Redis distributed lock + TTL reservations |
-| **−95%** third-party API calls | Refresh-ahead Redis cache |
-| **−60–80%** socket payloads | Delta signaling on live video calls |
+<table align="center">
+  <tr>
+    <td align="center" width="200"><h3>90s → 300ms</h3><sub>Search API latency</sub></td>
+    <td align="center" width="200"><h3>150 → 1</h3><sub>N+1 queries → one aggregation</sub></td>
+    <td align="center" width="200"><h3>1 → 6</h3><sub>Monolith → microservices on K8s</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><h3>0</h3><sub>Double bookings (Redis lock)</sub></td>
+    <td align="center"><h3>−95%</h3><sub>Third-party API calls (cache)</sub></td>
+    <td align="center"><h3>−80%</h3><sub>Socket payloads (delta signaling)</sub></td>
+  </tr>
+</table>
 
-### 🤖 GenAI work
+<br/>
 
-- **OrbitDesk**: RAG + agentic helpdesk copilot. Hybrid BM25 + vector search, reranking, retrieval-time RBAC.
-  `Recall@5 1.0` · `RAGAS faithfulness 0.91` · `0 leaks in 1,386 adversarial queries`
-- **Pluto**: voice-controlled coding agent on Alexa. LLM tool-calling, Groq → Ollama failover, sandboxed execution.
-- **ERP SaaS (at work)**: multi-tenant Django backend with a self-hosted LLM gateway on Celery queues.
+<!-- ═══════════ GENAI ═══════════ -->
+<h2 align="center">🤖 What I'm Building</h2>
 
-### 🛠️ Stack
+<table align="center">
+  <tr>
+    <td align="center" width="300">
+      <h3>🧠 OrbitDesk</h3>
+      <sub>RAG + agentic helpdesk copilot<br/>Hybrid search · reranking · RBAC</sub><br/><br/>
+      <img src="https://img.shields.io/badge/Recall@5-1.0-00C853?style=flat-square"/>
+      <img src="https://img.shields.io/badge/RAGAS-0.91-00C853?style=flat-square"/>
+      <img src="https://img.shields.io/badge/Leaks-0%2F1386-00C853?style=flat-square"/>
+    </td>
+    <td align="center" width="300">
+      <h3>🎙️ Pluto</h3>
+      <sub>Voice-controlled coding agent on Alexa<br/>Tool-calling · LLM failover · sandbox</sub><br/><br/>
+      <img src="https://img.shields.io/badge/Tools-9-7F00FF?style=flat-square"/>
+      <img src="https://img.shields.io/badge/Groq→Ollama-failover-7F00FF?style=flat-square"/>
+      <img src="https://img.shields.io/badge/Tests-183-7F00FF?style=flat-square"/>
+    </td>
+    <td align="center" width="300">
+      <h3>🏢 ERP SaaS</h3>
+      <sub>Multi-tenant Django backend<br/>Self-hosted LLM on Celery queues</sub><br/><br/>
+      <img src="https://img.shields.io/badge/Django-multi--tenant-0091EA?style=flat-square"/>
+      <img src="https://img.shields.io/badge/LLM-self--hosted-0091EA?style=flat-square"/>
+    </td>
+  </tr>
+</table>
 
-| | |
-|---|---|
-| **AI** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat) ![RAG](https://img.shields.io/badge/RAG-6E40C9?style=flat) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white) |
-| **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat&logo=socket.io&logoColor=white) |
-| **Frontend** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) |
-| **Data** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white) |
-| **Cloud** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white) ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white) |
+<br/>
 
-**System design:** HLD / LLD · microservices · caching · distributed locking · queues · real-time systems
+<!-- ═══════════ STACK ═══════════ -->
+<h2 align="center">🛠️ Tech Stack</h2>
 
-> **Build → Measure → Optimize → Repeat.**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,ts,js,nodejs,express,fastapi,django,react,nextjs,tailwind&perline=10&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,aws,gcp,docker,kubernetes,githubactions,linux&perline=10&theme=dark"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/RAG-7F00FF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Microservices-00D4FF?style=for-the-badge"/>
+</p>
+
+<br/>
+
+<!-- ═══════════ STATS ═══════════ -->
+<h2 align="center">📊 GitHub Activity</h2>
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ashayatd&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7F00FF"/>
+  <img height="165" src="https://streak-stats.demolab.com?user=ashayatd&theme=tokyonight&hide_border=true&background=0D1117&ring=7F00FF&fire=00D4FF&currStreakLabel=00D4FF"/>
+</p>
+
+<br/>
+
+<p align="center">
+  <i>Build → Measure → Optimize → Repeat.</i>
+</p>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,100:7F00FF&height=110&section=footer" width="100%"/>
+</p>
