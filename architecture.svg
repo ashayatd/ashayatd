@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" width="1000" height="390" role="img" aria-label="How I build: product path, AI path and the infrastructure they run on">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7F00FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient>
+    <linearGradient id="laneA" gradientUnits="userSpaceOnUse" x1="30" y1="0" x2="972" y2="0"><stop offset="0" stop-color="#00D4FF" stop-opacity="0.15"/><stop offset="1" stop-color="#00D4FF" stop-opacity="0.5"/></linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#30363D"/></pattern>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="card"><rect x="10" y="10" width="980" height="370" rx="16"/></clipPath>
+    <path id="pa" d="M30 120 H972"/>
+    <path id="pb" d="M307 160 V240 H972"/>
+  </defs>
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace; }
+    .sans { font-family: 'Segoe UI','Inter',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; }
+    .flow { stroke-dasharray: 4 6; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -20; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="10" y="10" width="980" height="370" rx="16" fill="#0D1117"/>
+  <g clip-path="url(#card)"><rect x="10" y="50" width="980" height="330" fill="url(#dots)" opacity="0.5"/></g>
+  <rect x="10.75" y="10.75" width="978.5" height="368.5" rx="15.5" fill="none" stroke="url(#brand)" stroke-opacity="0.7" stroke-width="1.5"/>
+  <rect x="11.5" y="11.5" width="977" height="38" rx="14.5" fill="#161B22"/>
+  <rect x="11.5" y="34" width="977" height="16" fill="#161B22"/>
+  <line x1="11.5" y1="50" x2="988.5" y2="50" stroke="#30363D"/>
+  <circle cx="38" cy="30" r="6" fill="#FF5F56"/><circle cx="60" cy="30" r="6" fill="#FFBD2E"/><circle cx="82" cy="30" r="6" fill="#27C93F"/>
+  <text x="500" y="35" text-anchor="middle" class="mono" font-size="13" fill="#8B949E">how-i-build — one request, end to end</text>
+  <g class="mono" font-size="10" letter-spacing="2" fill="#6E7681">
+    <text x="30" y="71">PRODUCT PATH</text>
+    <text x="30" y="191">AI PATH</text>
+  </g>
+<line x1="30" y1="120" x2="972" y2="120" stroke="url(#laneA)" stroke-width="1.5"/>
+<path d="M307 160 V240 H972" fill="none" stroke="#B57BFF" stroke-opacity="0.35" stroke-width="1.5"/>
+<circle r="8" fill="#00D4FF" opacity="0.55" filter="url(#soft)"><animateMotion dur="4.5s" begin="0s" repeatCount="indefinite"><mpath href="#pa"/></animateMotion></circle>
+<circle r="3.5" fill="#FFFFFF"><animateMotion dur="4.5s" begin="0s" repeatCount="indefinite"><mpath href="#pa"/></animateMotion></circle>
+<circle r="8" fill="#B57BFF" opacity="0.55" filter="url(#soft)"><animateMotion dur="4.5s" begin="-2.78s" repeatCount="indefinite"><mpath href="#pb"/></animateMotion></circle>
+<circle r="3.5" fill="#FFFFFF"><animateMotion dur="4.5s" begin="-2.78s" repeatCount="indefinite"><mpath href="#pb"/></animateMotion></circle>
+<rect x="30" y="80" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="30.75" y="80.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="0s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.000;0.010;0.176;0.236;1"/></rect>
+<text x="44" y="107" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Client</text>
+<text x="44" y="126" class="sans" font-size="11" fill="#8B949E">Next.js · React · Redux</text>
+<rect x="44" y="134" width="130" height="17" rx="8.5" fill="#00D4FF" fill-opacity="0.14"/>
+<text x="52" y="146.5" class="mono" font-size="10.5" font-weight="700" fill="#00D4FF">8 products shipped</text>
+<rect x="224" y="80" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="224.75" y="80.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="0s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.206;0.216;0.382;0.442;1"/></rect>
+<text x="238" y="107" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">API Gateway</text>
+<text x="238" y="126" class="sans" font-size="11" fill="#8B949E">Express · Nginx · JWT</text>
+<rect x="238" y="134" width="105" height="17" rx="8.5" fill="#00D4FF" fill-opacity="0.14"/>
+<text x="246" y="146.5" class="mono" font-size="10.5" font-weight="700" fill="#00D4FF">1 → 6 services</text>
+<rect x="418" y="80" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="418.75" y="80.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="0s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.412;0.422;0.588;0.648;1"/></rect>
+<text x="432" y="107" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Microservices</text>
+<text x="432" y="126" class="sans" font-size="11" fill="#8B949E">Node.js · FastAPI · Django</text>
+<rect x="432" y="134" width="86" height="17" rx="8.5" fill="#00D4FF" fill-opacity="0.14"/>
+<text x="440" y="146.5" class="mono" font-size="10.5" font-weight="700" fill="#00D4FF">90s → 300ms</text>
+<rect x="612" y="80" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="612.75" y="80.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="0s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.618;0.628;0.794;0.854;1"/></rect>
+<text x="626" y="107" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Redis</text>
+<text x="626" y="126" class="sans" font-size="11" fill="#8B949E">cache · locks · BullMQ</text>
+<rect x="626" y="134" width="105" height="17" rx="8.5" fill="#00D4FF" fill-opacity="0.14"/>
+<text x="634" y="146.5" class="mono" font-size="10.5" font-weight="700" fill="#00D4FF">−95% API calls</text>
+<rect x="806" y="80" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="806.75" y="80.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="0s" repeatCount="indefinite" values="0;0;1;1" keyTimes="0;0.824;0.834;1"/></rect>
+<text x="820" y="107" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Databases</text>
+<text x="820" y="126" class="sans" font-size="11" fill="#8B949E">Postgres · Mongo · MySQL</text>
+<rect x="820" y="134" width="111" height="17" rx="8.5" fill="#00D4FF" fill-opacity="0.14"/>
+<text x="828" y="146.5" class="mono" font-size="10.5" font-weight="700" fill="#00D4FF">150 → 1 queries</text>
+<path d="M205 115 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M399 115 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M593 115 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M787 115 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="30" y="200" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<text x="44" y="227" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Evals &amp; Tracing</text>
+<text x="44" y="246" class="sans" font-size="11" fill="#8B949E">RAGAS · MLflow · Langfuse</text>
+<rect x="44" y="254" width="124" height="17" rx="8.5" fill="#B57BFF" fill-opacity="0.14"/>
+<text x="52" y="266.5" class="mono" font-size="10.5" font-weight="700" fill="#B57BFF">faithfulness 0.91</text>
+<rect x="224" y="200" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="224.75" y="200.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="-2.78s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.054;0.064;0.219;0.279;1"/></rect>
+<text x="238" y="227" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Guardrails</text>
+<text x="238" y="246" class="sans" font-size="11" fill="#8B949E">prompt-injection · RBAC</text>
+<rect x="238" y="254" width="111" height="17" rx="8.5" fill="#B57BFF" fill-opacity="0.14"/>
+<text x="246" y="266.5" class="mono" font-size="10.5" font-weight="700" fill="#B57BFF">0 leaks / 1,386</text>
+<rect x="418" y="200" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="418.75" y="200.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="-2.78s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.256;0.266;0.479;0.539;1"/></rect>
+<text x="432" y="227" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Agent</text>
+<text x="432" y="246" class="sans" font-size="11" fill="#8B949E">LangGraph · QLoRA router</text>
+<rect x="432" y="254" width="111" height="17" rx="8.5" fill="#B57BFF" fill-opacity="0.14"/>
+<text x="440" y="266.5" class="mono" font-size="10.5" font-weight="700" fill="#B57BFF">intent acc 0.91</text>
+<rect x="612" y="200" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="612.75" y="200.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="-2.78s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.517;0.527;0.740;0.800;1"/></rect>
+<text x="626" y="227" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">Hybrid RAG</text>
+<text x="626" y="246" class="sans" font-size="11" fill="#8B949E">BM25 + vector · rerank</text>
+<rect x="626" y="254" width="92" height="17" rx="8.5" fill="#B57BFF" fill-opacity="0.14"/>
+<text x="634" y="266.5" class="mono" font-size="10.5" font-weight="700" fill="#B57BFF">Recall@5 1.0</text>
+<rect x="806" y="200" width="166" height="80" rx="10" fill="#161B22" stroke="#30363D"/>
+<rect x="806.75" y="200.75" width="164.5" height="78.5" rx="9.5" fill="none" stroke="url(#brand)" stroke-width="1.6" opacity="0"><animate attributeName="opacity" dur="4.5s" begin="-2.78s" repeatCount="indefinite" values="0;0;1;1" keyTimes="0;0.777;0.787;1"/></rect>
+<text x="820" y="227" class="sans" font-size="15" font-weight="700" fill="#E6EDF3">LLM</text>
+<text x="820" y="246" class="sans" font-size="11" fill="#8B949E">Groq ⇄ Ollama</text>
+<rect x="820" y="254" width="99" height="17" rx="8.5" fill="#B57BFF" fill-opacity="0.14"/>
+<text x="828" y="266.5" class="mono" font-size="10.5" font-weight="700" fill="#B57BFF">auto-failover</text>
+<path d="M399 235 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M593 235 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M787 235 l5 5 -5 5" fill="none" stroke="#484F58" stroke-width="1.6" stroke-linecap="round"/>
+<g class="mono" font-size="10" fill="#6E7681">
+<text x="315" y="184">AI requests</text>
+<text x="509" y="184">tool calls</text>
+</g>
+<line x1="501" y1="161" x2="501" y2="199" stroke="#B57BFF" stroke-opacity="0.8" stroke-width="1.5" class="flow"/>
+<line x1="197" y1="240" x2="223" y2="240" stroke="#6E7681" stroke-width="1.5" class="flow"/>
+<rect x="30" y="300" width="942" height="52" rx="10" fill="#161B22" stroke="#30363D"/>
+<text x="50" y="331" class="mono" font-size="10" letter-spacing="2" fill="#6E7681">RUNS ON</text>
+<text x="140" y="331" class="sans" font-size="13.5" font-weight="600"><tspan fill="#C9D1D9" dx="0">Docker</tspan><tspan fill="#7F00FF" dx="10">◆</tspan><tspan fill="#C9D1D9" dx="10">Kubernetes · Helm · HPA</tspan><tspan fill="#7F00FF" dx="10">◆</tspan><tspan fill="#C9D1D9" dx="10">AWS</tspan><tspan fill="#7F00FF" dx="10">◆</tspan><tspan fill="#C9D1D9" dx="10">GCP</tspan><tspan fill="#7F00FF" dx="10">◆</tspan><tspan fill="#C9D1D9" dx="10">GitHub Actions CI/CD</tspan><tspan fill="#7F00FF" dx="10">◆</tspan><tspan fill="#C9D1D9" dx="10">Nginx</tspan><tspan fill="#7F00FF" dx="10">◆</tspan><tspan fill="#C9D1D9" dx="10">Celery workers</tspan></text>
+</svg>
