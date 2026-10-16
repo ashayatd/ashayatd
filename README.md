@@ -1,67 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="Build, Measure, Optimize, Repeat">
-  <defs>
-    <linearGradient id="lane" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="800" y2="0">
-      <stop offset="0" stop-color="#7F00FF"/>
-      <stop offset="1" stop-color="#00D4FF"/>
-    </linearGradient>
-    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-    <!-- loop: forward lane (bottom) → right turn → return lane (top) → left turn. Length ≈ 1357 -->
-    <path id="loop" d="M200 90 L800 90 A25 25 0 0 0 800 40 L200 40 A25 25 0 0 0 200 90 Z"/>
-  </defs>
+<!-- ═══════════ HEADER ═══════════ -->
+<p align="center">
+  <img src="./assets/header.svg" width="100%" alt="Ashay Tamrakar — Full-Stack AI Engineer"/>
+</p>
 
-  <style>
-    .sans { font-family: 'Segoe UI','Inter',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; }
-    .back { stroke-dasharray: 3 9; animation: back 1.2s linear infinite; }
-    @keyframes back { to { stroke-dashoffset: 24; } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
-  </style>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4FF&center=true&vCenter=true&width=620&lines=Full-Stack+%C2%B7+GenAI+%C2%B7+Agentic+AI;Node.js+%2B+Next.js+%2B+Python;Search+API%3A+90s+%E2%86%92+300ms+%E2%9A%A1;8+production+products+shipped+%F0%9F%9A%80;RAG+with+0+leaks+in+1%2C386+attacks+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG"/>
+</p>
 
-  <!-- return lane -->
-  <path d="M800 90 A25 25 0 0 0 800 40 L200 40 A25 25 0 0 0 200 90" fill="none" stroke="#8B949E" stroke-opacity="0.45" stroke-width="1.5" class="back"/>
+<p align="center">
+  <a href="https://portfolio-web-steel-eta.vercel.app"><img src="https://img.shields.io/badge/Portfolio-7F00FF?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/ashayatd"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white"/></a>
+  <a href="mailto:ashay.tamrakar@gmail.com"><img src="https://img.shields.io/badge/Email-00D4FF?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
 
-  <!-- forward lane -->
-  <line x1="200" y1="90" x2="800" y2="90" stroke="url(#lane)" stroke-width="3" stroke-linecap="round"/>
+<p align="center">
+  <b>3+ years owning products end to end — architecture, APIs, data, deployment.</b><br/>
+  Full-stack depth in Node.js & Next.js. Now building RAG and agentic AI systems in Python.
+</p>
 
-  <!-- packet with trailing comet -->
-  <g fill="#00D4FF">
-    <circle r="3" opacity="0.25"><animateMotion dur="6s" repeatCount="indefinite" begin="-5.84s"><mpath href="#loop"/></animateMotion></circle>
-    <circle r="3.5" opacity="0.45"><animateMotion dur="6s" repeatCount="indefinite" begin="-5.92s"><mpath href="#loop"/></animateMotion></circle>
-    <circle r="9" opacity="0.55" filter="url(#soft)"><animateMotion dur="6s" repeatCount="indefinite" begin="0s"><mpath href="#loop"/></animateMotion></circle>
-    <circle r="4.5" fill="#FFFFFF"><animateMotion dur="6s" repeatCount="indefinite" begin="0s"><mpath href="#loop"/></animateMotion></circle>
-  </g>
+<br/>
 
-  <!-- stage nodes: each ring fires as the packet passes (arrival = distance / 1357 of a 6s loop) -->
-  <g fill="none" stroke="#00D4FF" stroke-width="2">
-    <circle cx="200" cy="90" r="9" opacity="0">
-      <animate attributeName="r" dur="6s" repeatCount="indefinite" values="9;9;22;22" keyTimes="0;0.001;0.12;1"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.001;0.12;1"/>
-    </circle>
-    <circle cx="400" cy="90" r="9" opacity="0">
-      <animate attributeName="r" dur="6s" repeatCount="indefinite" values="9;9;22;22" keyTimes="0;0.147;0.267;1"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.147;0.267;1"/>
-    </circle>
-    <circle cx="600" cy="90" r="9" opacity="0">
-      <animate attributeName="r" dur="6s" repeatCount="indefinite" values="9;9;22;22" keyTimes="0;0.295;0.415;1"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.295;0.415;1"/>
-    </circle>
-    <circle cx="800" cy="90" r="9" opacity="0">
-      <animate attributeName="r" dur="6s" repeatCount="indefinite" values="9;9;22;22" keyTimes="0;0.442;0.562;1"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.442;0.562;1"/>
-    </circle>
-  </g>
-  <g stroke="#FFFFFF" stroke-width="2.5">
-    <circle cx="200" cy="90" r="8" fill="#7F00FF"/>
-    <circle cx="400" cy="90" r="8" fill="#5A35FF"/>
-    <circle cx="600" cy="90" r="8" fill="#2F6BFF"/>
-    <circle cx="800" cy="90" r="8" fill="#00B8E6"/>
-  </g>
+<!-- ═══════════ IMPACT ═══════════ -->
+<h2 align="center">⚡ Impact</h2>
 
-  <g class="sans" font-size="15" font-weight="700" text-anchor="middle" fill="#8B949E">
-    <text x="200" y="126">Build</text>
-    <text x="400" y="126">Measure</text>
-    <text x="600" y="126">Optimize</text>
-    <text x="800" y="126">Repeat</text>
-  </g>
-</svg>
+<table align="center">
+  <tr>
+    <td align="center" width="200"><h3>90s → 300ms</h3><sub>Search API latency</sub></td>
+    <td align="center" width="200"><h3>150 → 1</h3><sub>N+1 queries → one aggregation</sub></td>
+    <td align="center" width="200"><h3>1 → 6</h3><sub>Monolith → microservices on K8s</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><h3>0</h3><sub>Double bookings (Redis lock)</sub></td>
+    <td align="center"><h3>−95%</h3><sub>Third-party API calls (cache)</sub></td>
+    <td align="center"><h3>−80%</h3><sub>Socket payloads (delta signaling)</sub></td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- ═══════════ GENAI ═══════════ -->
+<h2 align="center">🤖 What I'm Building</h2>
+
+<table align="center">
+  <tr>
+    <td align="center" width="300">
+      <h3>🧠 OrbitDesk</h3>
+      <sub>RAG + agentic helpdesk copilot<br/>Hybrid search · reranking · RBAC</sub><br/><br/>
+      <img src="https://img.shields.io/badge/Recall@5-1.0-00C853?style=flat-square"/>
+      <img src="https://img.shields.io/badge/RAGAS-0.91-00C853?style=flat-square"/>
+      <img src="https://img.shields.io/badge/Leaks-0%2F1386-00C853?style=flat-square"/>
+    </td>
+    <td align="center" width="300">
+      <h3>🎙️ Pluto</h3>
+      <sub>Voice-controlled coding agent on Alexa<br/>Tool-calling · LLM failover · sandbox</sub><br/><br/>
+      <img src="https://img.shields.io/badge/Tools-9-7F00FF?style=flat-square"/>
+      <img src="https://img.shields.io/badge/Groq→Ollama-failover-7F00FF?style=flat-square"/>
+      <img src="https://img.shields.io/badge/Tests-183-7F00FF?style=flat-square"/>
+    </td>
+    <td align="center" width="300">
+      <h3>🏢 ERP SaaS</h3>
+      <sub>Multi-tenant Django backend<br/>Self-hosted LLM on Celery queues</sub><br/><br/>
+      <img src="https://img.shields.io/badge/Django-multi--tenant-0091EA?style=flat-square"/>
+      <img src="https://img.shields.io/badge/LLM-self--hosted-0091EA?style=flat-square"/>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- ═══════════ STACK ═══════════ -->
+<h2 align="center">🛠️ Tech Stack</h2>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,ts,js,nodejs,express,fastapi,django,react,nextjs,tailwind&perline=10&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,aws,gcp,docker,kubernetes,githubactions,linux&perline=10&theme=dark"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/RAG-7F00FF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Microservices-00D4FF?style=for-the-badge"/>
+</p>
+
+<br/>
+
+<!-- ═══════════ STATS ═══════════ -->
+<h2 align="center">📊 GitHub Activity</h2>
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ashayatd&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7F00FF"/>
+  <img height="165" src="https://streak-stats.demolab.com?user=ashayatd&theme=tokyonight&hide_border=true&background=0D1117&ring=7F00FF&fire=00D4FF&currStreakLabel=00D4FF"/>
+</p>
+
+<br/>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<p align="center">
+  <img src="./assets/footer.svg" width="80%" alt="Build → Measure → Optimize → Repeat"/>
+</p>
