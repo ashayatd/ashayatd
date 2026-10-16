@@ -71,27 +71,48 @@
 <!-- ═══════════ STACK ═══════════ -->
 <h2 align="center">🛠️ Tech Stack</h2>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,ts,js,nodejs,express,fastapi,django,react,nextjs,tailwind&perline=10&theme=dark"/><br/>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,aws,gcp,docker,kubernetes,githubactions,linux&perline=10&theme=dark"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/RAG-7F00FF?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Microservices-00D4FF?style=for-the-badge"/>
-</p>
+<table align="center">
+  <tr>
+    <td align="right" width="150"><b>Languages</b></td>
+    <td><img src="https://skillicons.dev/icons?i=py,ts,js&theme=dark" height="40"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>Backend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,django,nginx&theme=dark" height="40"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>Frontend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind&theme=dark" height="40"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>Data</b></td>
+    <td><img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,firebase,sqlite&theme=dark" height="40"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>Cloud &amp; DevOps</b></td>
+    <td><img src="https://skillicons.dev/icons?i=aws,gcp,docker,kubernetes,githubactions,vercel,linux,git&theme=dark" height="40"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>GenAI</b></td>
+    <td><img src="https://img.shields.io/badge/LangChain-7F00FF?style=for-the-badge&logo=langchain&logoColor=white"/> <img src="https://img.shields.io/badge/LangGraph-7F00FF?style=for-the-badge"/> <img src="https://img.shields.io/badge/LlamaIndex-7F00FF?style=for-the-badge"/> <img src="https://img.shields.io/badge/RAG-7F00FF?style=for-the-badge"/> <img src="https://img.shields.io/badge/Groq-7F00FF?style=for-the-badge"/> <img src="https://img.shields.io/badge/Ollama-7F00FF?style=for-the-badge&logo=ollama&logoColor=white"/> <img src="https://img.shields.io/badge/Chroma-7F00FF?style=for-the-badge"/> <img src="https://img.shields.io/badge/FAISS-7F00FF?style=for-the-badge"/> <img src="https://img.shields.io/badge/pgvector-7F00FF?style=for-the-badge"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>Evals &amp; LLMOps</b></td>
+    <td><img src="https://img.shields.io/badge/RAGAS-3D5AFE?style=for-the-badge"/> <img src="https://img.shields.io/badge/MLflow-3D5AFE?style=for-the-badge&logo=mlflow&logoColor=white"/> <img src="https://img.shields.io/badge/Langfuse-3D5AFE?style=for-the-badge"/> <img src="https://img.shields.io/badge/QLoRA_Fine--tuning-3D5AFE?style=for-the-badge"/> <img src="https://img.shields.io/badge/Prompt_Guardrails-3D5AFE?style=for-the-badge"/></td>
+  </tr>
+  <tr>
+    <td align="right" width="150"><b>Architecture</b></td>
+    <td><img src="https://img.shields.io/badge/Microservices-0091EA?style=for-the-badge"/> <img src="https://img.shields.io/badge/API_Gateway-0091EA?style=for-the-badge"/> <img src="https://img.shields.io/badge/Distributed_Locks-0091EA?style=for-the-badge"/> <img src="https://img.shields.io/badge/BullMQ-0091EA?style=for-the-badge"/> <img src="https://img.shields.io/badge/Celery-0091EA?style=for-the-badge&logo=celery&logoColor=white"/> <img src="https://img.shields.io/badge/Socket.IO-0091EA?style=for-the-badge&logo=socketdotio&logoColor=white"/> <img src="https://img.shields.io/badge/HLD_%2F_LLD-0091EA?style=for-the-badge"/></td>
+  </tr>
+</table>
 
 <br/>
 
-<!-- ═══════════ STATS ═══════════ -->
-<h2 align="center">📊 GitHub Activity</h2>
+<!-- ═══════════ HOW I BUILD ═══════════ -->
+<h2 align="center">🏗️ How I Build</h2>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ashayatd&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7F00FF"/>
-  <img height="165" src="https://streak-stats.demolab.com?user=ashayatd&theme=tokyonight&hide_border=true&background=0D1117&ring=7F00FF&fire=00D4FF&currStreakLabel=00D4FF"/>
+  <img src="./architecture.svg" width="100%" alt="How I build: client, API gateway, microservices, Redis and databases on the product path; guardrails, agent, hybrid RAG and LLM failover on the AI path"/>
 </p>
 
 <br/>
