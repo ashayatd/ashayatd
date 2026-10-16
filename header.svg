@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Ashay Tamrakar — Full-Stack AI Engineer">
+  <defs>
+    <!-- shimmering brand gradient for the name -->
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="480" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#9D4DFF"/>
+      <stop offset="0.5" stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#9D4DFF"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="480 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7F00FF"/>
+      <stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="0.82" cy="0.55" r="0.45">
+      <stop offset="0" stop-color="#7F00FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#7F00FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#30363D"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <clipPath id="card"><rect x="10" y="10" width="980" height="320" rx="16"/></clipPath>
+
+    <!-- typing reveals: base width is full, so static renderers still show the text -->
+    <clipPath id="type1">
+      <rect x="40" y="78" width="320" height="32">
+        <animate attributeName="width" dur="1s" fill="freeze" calcMode="discrete"
+          values="0;0;48;59;70;81;92;103;320" keyTimes="0;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9"/>
+      </rect>
+    </clipPath>
+    <clipPath id="type2">
+      <rect x="40" y="222" width="320" height="32">
+        <animate attributeName="width" dur="3.2s" fill="freeze" calcMode="discrete"
+          values="0;0;48;59;70;81;92;103;114;125;136;147;158;169;180;320"
+          keyTimes="0;0.6;0.63;0.66;0.69;0.72;0.75;0.78;0.81;0.84;0.87;0.9;0.93;0.95;0.97;0.99"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace; }
+    .sans { font-family: 'Segoe UI','Inter',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; }
+    .rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+    .d1 { animation-delay: 1.0s; } .d2 { animation-delay: 1.5s; } .d3 { animation-delay: 3.3s; }
+    .cursor { animation: rise .01s 3.7s both, blink 1s 3.7s steps(1) infinite; }
+    .pulse { animation: pulse 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .flow { stroke-dasharray: 4 16; animation: flow 1.6s linear infinite; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes pulse { 0% { opacity: .7; transform: scale(1); } 70%,100% { opacity: 0; transform: scale(2.6); } }
+    @keyframes flow { to { stroke-dashoffset: -40; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <!-- card -->
+  <rect x="10" y="10" width="980" height="320" rx="16" fill="#0D1117"/>
+  <g clip-path="url(#card)">
+    <rect x="10" y="50" width="980" height="280" fill="url(#dots)" opacity="0.55"/>
+    <rect x="10" y="10" width="980" height="320" fill="url(#aura)"/>
+  </g>
+  <rect x="10.75" y="10.75" width="978.5" height="318.5" rx="15.5" fill="none" stroke="url(#brand)" stroke-opacity="0.7" stroke-width="1.5"/>
+
+  <!-- window bar -->
+  <rect x="11.5" y="11.5" width="977" height="38" rx="14.5" fill="#161B22"/>
+  <rect x="11.5" y="34" width="977" height="16" fill="#161B22"/>
+  <line x1="11.5" y1="50" x2="988.5" y2="50" stroke="#30363D"/>
+  <circle cx="38" cy="30" r="6" fill="#FF5F56"/>
+  <circle cx="60" cy="30" r="6" fill="#FFBD2E"/>
+  <circle cx="82" cy="30" r="6" fill="#27C93F"/>
+  <text x="500" y="35" text-anchor="middle" class="mono" font-size="13" fill="#8B949E">ashay@ai-engineer: ~/profile</text>
+
+  <!-- terminal -->
+  <g class="mono" font-size="18">
+    <g clip-path="url(#type1)">
+      <text x="50" y="100"><tspan fill="#00D4FF">❯</tspan><tspan fill="#C9D1D9" dx="10">whoami</tspan></text>
+    </g>
+  </g>
+
+  <g class="rise d1">
+    <text x="50" y="160" class="sans" font-size="54" font-weight="800" fill="#7F00FF" opacity="0.45" filter="url(#glow)">Ashay Tamrakar</text>
+    <text x="50" y="160" class="sans" font-size="54" font-weight="800" fill="url(#shine)">Ashay Tamrakar</text>
+  </g>
+
+  <text x="52" y="198" class="sans rise d2" font-size="21">
+    <tspan fill="#E6EDF3" font-weight="700">Full-Stack AI Engineer</tspan><tspan fill="#8B949E" font-weight="500"> · 3+ yrs · 8 products shipped</tspan>
+  </text>
+
+  <g class="mono" font-size="18">
+    <g clip-path="url(#type2)">
+      <text x="50" y="244"><tspan fill="#00D4FF">❯</tspan><tspan fill="#C9D1D9" dx="10">cat focus.txt</tspan></text>
+    </g>
+  </g>
+
+  <text x="50" y="276" class="mono rise d3" font-size="16" fill="#A5D6FF">RAG · Agentic AI · LangGraph · Node.js · Next.js · AWS</text>
+
+  <g class="mono" font-size="18">
+    <text x="50" y="310" fill="#00D4FF">❯</text>
+    <rect class="cursor" x="70" y="295" width="10" height="19" fill="#00D4FF"/>
+  </g>
+
+  <!-- neural network -->
+  <g id="net">
+    <!-- idle edges -->
+    <g stroke="#30363D" stroke-width="1">
+      <path d="M690 120 L800 90"/><path d="M690 120 L800 140"/><path d="M690 120 L800 190"/><path d="M690 120 L800 240"/><path d="M690 120 L800 290"/>
+      <path d="M690 190 L800 90"/><path d="M690 190 L800 140"/><path d="M690 190 L800 190"/><path d="M690 190 L800 240"/><path d="M690 190 L800 290"/>
+      <path d="M690 260 L800 90"/><path d="M690 260 L800 140"/><path d="M690 260 L800 190"/><path d="M690 260 L800 240"/><path d="M690 260 L800 290"/>
+      <path d="M800 90 L910 120"/><path d="M800 90 L910 190"/><path d="M800 90 L910 260"/>
+      <path d="M800 140 L910 120"/><path d="M800 140 L910 190"/><path d="M800 140 L910 260"/>
+      <path d="M800 190 L910 120"/><path d="M800 190 L910 190"/><path d="M800 190 L910 260"/>
+      <path d="M800 240 L910 120"/><path d="M800 240 L910 190"/><path d="M800 240 L910 260"/>
+      <path d="M800 290 L910 120"/><path d="M800 290 L910 190"/><path d="M800 290 L910 260"/>
+    </g>
+
+    <!-- active routes -->
+    <g fill="none" stroke="url(#brand)" stroke-width="1.6" class="flow">
+      <path id="r1" d="M690 120 L800 140 L910 190"/>
+      <path id="r2" d="M690 190 L800 240 L910 120"/>
+      <path id="r3" d="M690 260 L800 190 L910 260"/>
+      <path id="r4" d="M690 190 L800 90 L910 190"/>
+    </g>
+
+    <!-- data packets -->
+    <g fill="#00D4FF">
+      <circle r="6" opacity="0.5" filter="url(#soft)"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0s"><mpath href="#r1"/></animateMotion></circle>
+      <circle r="3"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0s"><mpath href="#r1"/></animateMotion></circle>
+      <circle r="6" opacity="0.5" filter="url(#soft)"><animateMotion dur="3.1s" repeatCount="indefinite" begin="-1.2s"><mpath href="#r2"/></animateMotion></circle>
+      <circle r="3"><animateMotion dur="3.1s" repeatCount="indefinite" begin="-1.2s"><mpath href="#r2"/></animateMotion></circle>
+    </g>
+    <g fill="#B57BFF">
+      <circle r="6" opacity="0.5" filter="url(#soft)"><animateMotion dur="2.9s" repeatCount="indefinite" begin="-0.7s"><mpath href="#r3"/></animateMotion></circle>
+      <circle r="3"><animateMotion dur="2.9s" repeatCount="indefinite" begin="-0.7s"><mpath href="#r3"/></animateMotion></circle>
+      <circle r="6" opacity="0.5" filter="url(#soft)"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-2s"><mpath href="#r4"/></animateMotion></circle>
+      <circle r="3"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-2s"><mpath href="#r4"/></animateMotion></circle>
+    </g>
+
+    <!-- nodes -->
+    <g fill="none" stroke="#00D4FF" stroke-width="1.5">
+      <circle class="pulse" cx="690" cy="190" r="8" style="animation-delay:0s"/>
+      <circle class="pulse" cx="800" cy="140" r="8" style="animation-delay:.6s"/>
+      <circle class="pulse" cx="800" cy="240" r="8" style="animation-delay:1.2s"/>
+      <circle class="pulse" cx="910" cy="190" r="8" style="animation-delay:1.8s"/>
+    </g>
+    <g fill="#0D1117" stroke="url(#brand)" stroke-width="2.2">
+      <circle cx="690" cy="120" r="8"/><circle cx="690" cy="190" r="8"/><circle cx="690" cy="260" r="8"/>
+      <circle cx="800" cy="90" r="8"/><circle cx="800" cy="140" r="8"/><circle cx="800" cy="190" r="8"/><circle cx="800" cy="240" r="8"/><circle cx="800" cy="290" r="8"/>
+      <circle cx="910" cy="120" r="8"/><circle cx="910" cy="190" r="8"/><circle cx="910" cy="260" r="8"/>
+    </g>
+    <g class="mono" font-size="11" fill="#6E7681" text-anchor="middle">
+      <text x="690" y="300">input</text>
+      <text x="800" y="318">reason</text>
+      <text x="910" y="300">ship</text>
+    </g>
+  </g>
+</svg>
