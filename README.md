@@ -1,6 +1,6 @@
 <!-- ═══════════ HEADER ═══════════ -->
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Ashay Tamrakar — Full-Stack AI Engineer"/>
+  <img src="./header.svg" width="100%" alt="Ashay Tamrakar — Full-Stack AI Engineer"/>
 </p>
 
 <p align="center">
@@ -98,5 +98,5 @@
 
 <!-- ═══════════ FOOTER ═══════════ -->
 <p align="center">
-  <img src="./assets/footer.svg" width="80%" alt="Build → Measure → Optimize → Repeat"/>
+  <img src="./footer.svg" width="80%" alt="Build → Measure → Optimize → Repeat"/>
 </p>
